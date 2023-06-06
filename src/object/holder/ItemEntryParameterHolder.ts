@@ -1,0 +1,188 @@
+export default class ItemEntryParameterHolder {
+
+    catId : string = '' ; 
+    catName : string = '';
+    subCatId : string = '' ;
+    subCatName : string = '';
+    itemTypeId : string = '' ;
+    itemTypeName : string = '' ;
+    itemPriceTypeId : string = '' ;
+    conditionOfItemName : string = '';
+    itemLocationId : string = '' ;
+    itemLocationName : string = '';
+    locationTownshipId : string = '' ;
+    locationTownshipName : string = '';
+    itemPriceTypeName : string = '';
+    conditionOfItemId : string = '' ;
+    description : string = '' ;
+    price : string = '' ;
+    discountRate : string = '' ;
+    brand: string = '';
+    dealOptionId: string = '';
+    dealOptionName: string = '';
+    remark: string = '';
+    address : string = '' ;
+    title : string = '' ;
+    latitude : string = '' ;
+    longitude : string = '' ;
+    itemCurrencyId : string = '' ;
+    currencyShortForm : string = '';
+    businessMode : string = '';  
+    businessModeBool : Boolean = false;
+    businessModeVal : string = '';
+    addedUserId : string = '' ;
+
+    colorId : string = '' ;
+    colorValue : string = '';
+    fuelTypeId : string = '' ;
+    fuelTypeName : string = '';
+    buildTypeId : string = '' ;
+    buildtypeName : string = '';
+    sellerTypeId : string = '' ;
+    sellertypeName : string = '';
+    transmissionId : string = '' ;
+    transmissionName : string = '';
+    isSoldOut : string = '' ;
+    plateNumber : string = '' ;
+    enginePower : Number = 0 ;
+    steeringPosition : string = '' ;
+    noOfOwner : Number = 0 ;
+    trimName : string = '' ;
+    vehicleId : string = '' ;
+    priceUnit : string = '' ;
+    year : string = '' ;
+    maxPassengers : string = '' ;
+    noOfDoors : Number = 0 ;
+    mileage : Number = 0 ;
+    id : string = '' ;
+    
+    biddingStartDate : string = '' ;
+    targetPrice : Number = 0 ;
+    paymentMethodNounce : string = '' ;
+    nameOnCard : string = '' ;
+    cardNo : string = '' ;
+    cvc : string = '' ;
+    month : string = '' ;
+    payYear : string = '' ;
+    paymentMethod : string = '' ;
+    engineStatus : string = '' ;
+    engineStatusVal : string = '';
+    itemVehicleTypeId : string = '';
+    itemVehicleTypeTitle : string = '';
+    highlightInformation : string = '';
+    blueBookValuePrice : Number = 0;
+
+
+
+    ItemEntryParameterHolder() {
+        this.catId = '';
+        this.subCatId = '';
+        this.itemTypeId = '';
+        this.itemPriceTypeId = '';
+        this.itemCurrencyId = '';
+        this.dealOptionId = '';
+        this.remark = '';
+        this.conditionOfItemId = '';
+        this.itemLocationId = '';
+        this.locationTownshipId = '';
+        this.colorId = '';
+        this.fuelTypeId = '';
+        this.buildTypeId = '';
+        this.sellerTypeId = '';
+        this.transmissionId = '';
+        this.description = '';
+        this.price = '';
+        this.discountRate = '';
+        this.brand = '';
+        this.businessMode = '';
+        this.isSoldOut = '';
+        this.title = '';
+        this.address = '';
+        this.latitude = '';
+        this.longitude = '';
+        this.plateNumber = '';
+        this.enginePower = 0;
+        this.steeringPosition = '';
+        this.noOfOwner = 0;
+        this.trimName = '';
+        this.vehicleId = '';
+        this.priceUnit = '';
+        this.year = '';
+        this.maxPassengers = '';
+        this.noOfDoors = 0;
+        this.mileage = 0;
+        this.id = '';
+        this.addedUserId = '';
+        this.biddingStartDate = '';
+        this.targetPrice = 0;
+        this.paymentMethodNounce = '';
+        this.nameOnCard = '';
+        this.cardNo = '';
+        this.cvc = '';
+        this.month = '';
+        this.payYear = '';
+        this.paymentMethod = '';
+        this.engineStatus = '';
+        this.engineStatusVal = '';
+    }
+
+    toMap(): {} {
+        const map = {};
+        map['cat_id'] = this.catId;
+        map['sub_cat_id'] = this.subCatId;
+        map['item_type_id'] = this.itemTypeId;
+        map['deal_option_id'] = this.dealOptionId;
+        map['deal_option_remark'] = this.remark;
+        map['item_price_type_id'] = this.itemPriceTypeId;
+        map['item_currency_id'] = this.itemCurrencyId;
+        map['condition_of_item_id'] = this.conditionOfItemId;
+        map['item_location_id'] = this.itemLocationId;
+        map['item_location_township_id'] = this.locationTownshipId;
+        map['color_id'] = this.colorId;
+        map['vehicle_type_id'] = this.itemVehicleTypeId;
+        map['fuel_type_id'] = this.fuelTypeId;
+        map['build_type_id'] = this.buildTypeId;
+        map['seller_type_id'] = this.sellerTypeId;
+        map['transmission_id'] = this.transmissionId;
+        map['description'] = this.description;
+        map['highlight_info'] = this.highlightInformation;
+        map['price'] = this.price;
+        map['discount_rate_by_percentage'] = this.discountRate;
+        map['brand'] = this.brand;
+        map['business_mode'] = this.businessMode;
+        map['is_sold_out'] = this.isSoldOut;
+        map['title'] = this.title;
+        map['address'] = this.address;
+        map['lat'] = this.latitude;
+        map['lng'] = this.longitude;
+        map['plate_number'] = this.plateNumber;
+        map['engine_power'] = this.enginePower;
+        map['steering_position'] = this.steeringPosition;
+        map['no_of_owner'] = this.noOfOwner;
+        map['trim_name'] = this.trimName;
+        map['vehicle_id'] = this.vehicleId;
+        map['price_unit'] = this.priceUnit;
+        map['year'] = this.year;
+        map['max_passengers'] = this.maxPassengers;
+        map['no_of_doors'] = this.noOfDoors;
+        map['mileage'] = this.mileage;
+        map['id'] = this.id;
+        map['added_user_id'] = this.addedUserId;
+        map['bidding_start_date'] = this.biddingStartDate;
+        map['target_price'] = this.targetPrice;
+        map['blue_book_value_price'] = this.blueBookValuePrice;
+        map['payment_method_nonce'] = this.paymentMethodNounce;
+        map['name_on_card'] = this.nameOnCard;
+        map['card_no'] = this.cardNo;
+        map['cvc'] = this.cvc;
+        map['month'] = this.month;
+        map['pay_year'] = this.payYear;
+        map['payment_method'] = this.paymentMethod;
+        map['engine_status'] = this.engineStatus;
+
+
+
+
+        return map;
+    }
+}
