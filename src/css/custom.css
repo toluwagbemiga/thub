@@ -1,0 +1,122 @@
+/* .btn {
+    @apply inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest transition ease-in-out duration-150;
+} */
+/*
+.btn:hover {
+    @apply bg-gray-700;
+}
+
+.btn:focus {
+    @apply outline-none border-gray-900 shadow-outline-gray;
+}
+
+.btn:active {
+    @apply bg-gray-900;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+/* @layer base {
+    @font-face {
+        font-family: 'Roboto';
+        src: local('Roboto'), url(../assets/fonts/Roboto-Regular.ttf) format('ttf');
+    }
+} */
+
+.warning {
+    @apply text-yellow-400 bg-yellow-100 ;
+}
+
+.success {
+    @apply text-green-400 bg-green-100 ;
+}
+
+.error {
+    @apply text-red-400 bg-red-100 ;
+}
+
+.second {
+    @apply text-gray-400 bg-gray-100 ;
+}
+
+.btn-warning {
+    @apply warning border border-yellow-300 ;
+}
+
+.btn-success {
+    @apply success border border-green-300  ;
+}
+
+.btn-error {
+    @apply error border border-red-300  ;
+}
+
+.btn-second {
+    @apply second border border-gray-300  ;
+}
+
+.input-warning {
+    @apply warning border border-yellow-300 rounded-md px-3 py-3 ;
+}
+
+.input-warning:focus {
+    @apply outline-none  border-yellow-600;
+}
+
+.input-success {
+    @apply success border rounded-md border-green-300 px-3 py-3 ;
+}
+
+.input-success:focus {
+    @apply outline-none  border-green-600;
+}
+
+.input-error {
+    @apply error border rounded-md border-red-300 px-3 py-3;
+}
+
+.input-error:focus {
+    @apply outline-none  border-red-600;
+}
+
+.input-second {
+    @apply second border rounded-md border-gray-300 px-3 py-3 ;
+}
+
+.input-second:focus {
+    @apply outline-none  border-green-600;
+}
+
+
+.vue-skeletor {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.12); }
+    .vue-skeletor:not(.vue-skeletor--shimmerless):after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: translateX(-100%);
+      background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(37, 22, 22, 0));
+      animation: shimmer 1.5s infinite;
+      content: ''; }
+    .vue-skeletor--rect, .vue-skeletor--circle {
+      display: block; }
+    .vue-skeletor--circle {
+      border-radius: 50%; }
+    .vue-skeletor--pill, .vue-skeletor--text {
+      border-radius: 9999px; }
+    .vue-skeletor--text {
+      line-height: 1;
+      display: inline-block;
+      width: 100%;
+      height: inherit;
+      vertical-align: middle;
+      top: -1px; }
+  
+  @keyframes shimmer {
+    100% {
+      transform: translateX(100%); } }
+
